@@ -1,0 +1,16 @@
+{
+  "options": { 
+    "title": "# US Presidents", 
+    "maximize": "true" 
+  },
+  "assets": [
+    "adams.html",
+    "app.js",
+    "jefferson.html",
+    "madison.html",
+    "menu.html",
+    "monroe.html",
+    "style.css",
+    "washington.html"
+  ]
+}
