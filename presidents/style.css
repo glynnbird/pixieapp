@@ -1,0 +1,48 @@
+.pixiedust-app.pixiedust-maximize .centerContainer {
+  padding: 0 !important;
+}
+.pixiedust-app.pixiedust-maximize .expandButton {
+  display: none;
+}
+.pixiedust-app .modal-header {
+  background-color: rgba(0,0,0,0.45); /*#01021F;*/
+  border-bottom: 1px solid #00b4a0;
+  padding: 10px 0 10px 0;
+}
+.pixiedust-app .modal-title {
+  color: #fff;
+  font-size: 18px;
+  padding-left: 20px;
+}
+.pixiedust .modal-header .close {
+  color: #00b4a0;
+  font-size: 30px;
+  font-weight: 400;
+  margin: -5px 60px 0 0;
+}
+.pixiedust-app .modal-content {
+  background-image: url(https://images.unsplash.com/photo-1454702762838-a6df8cc3517f);
+  background-repeat: no-repeat;
+  background-size: cover;
+  border-top: 0 none;
+}
+.pixiedust-app .modal-content::after {
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  content: "";
+  position: absolute;
+  display: block;
+  opacity: 0.5;
+  background: -webkit-linear-gradient(left, #1d3649 0%, #325C80 50%);
+  background: linear-gradient(to right, #1d3649 0%, #325C80 50%);
+}
+.pixiedust-app .modal-content > div {
+  position: relative;
+  z-index: 1;
+}
+
+.pixiedust-app.pixiedust-maximize {
+  height: 100%;
+}
