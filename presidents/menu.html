@@ -1,16 +1,21 @@
 <div class="leftpanel">
   <h2>First 5</h2>
-  <input pd_options="pres=washington" type="button" value="George Washington">
-  <input pd_options="pres=adams" type="button" value="John Adams">
-  <input pd_options="pres=jefferson" type="button" value="Thomas Jefferson">
-  <input pd_options="pres=madison" type="button" value="James Madison">
-  <input pd_options="pres=monroe" type="button" value="James Monroe">
+  <input pd_target="president{{prefix}}" pd_options="pres=washington" type="button" value="George Washington">
+  <input pd_target="president{{prefix}}" pd_options="pres=adams" type="button" value="John Adams">
+  <input pd_target="president{{prefix}}" pd_options="pres=jefferson" type="button" value="Thomas Jefferson">
+  <input pd_target="president{{prefix}}" pd_options="pres=madison" type="button" value="James Madison">
+  <input pd_target="president{{prefix}}" pd_options="pres=monroe" type="button" value="James Monroe">
+  
+  <div id="president{{prefix}}">
+    <!-- response from click on above input buttons will get inserted here -->
+  </div>
 </div>
 <div class="rightpanel">
     <h2>Table</h2>
-    <target pd_target="map{{prefix}}"
-       pd_entity="pixeapp_entity[0]"
-       pd_options="handlerId=dataframe"/>
+    <div pd_render_onload
+       pd_entity="pixieapp_entity"
+       pd_options="handlerId=dataframe">
+      <!-- default pixiedust table will be rendered here -->
+    </div>
 </div>
 <div class="clear"></div>
-
